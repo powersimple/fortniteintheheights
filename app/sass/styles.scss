@@ -1,0 +1,231 @@
+/*
+FORNITE IN THE HEIGHTS
+*/
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Poppins:300,400');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color:#fff;
+    h2{
+        font-family: 'Luckiest Guy',  cursive;
+        font-size:3em;
+        text-align:center;
+    }
+    p{
+        font-size:20px;
+        line-height: 200%;
+        text-align:center;
+    }
+}
+#logo{
+    width:150px;
+    margin-top:-30px;
+}
+.navbar-fixed-top {
+    background-color: #1e1f3b;
+}
+.navbar-transparent {
+    background: transparent;
+}
+
+.home-section{
+    
+    
+}
+.dark-blue{
+    background-color: #1e1f3b;
+    a{
+        color:#fff;
+    }
+}
+.light-blue{
+    background-color:#b7d6f2;
+    color:#19183c;
+    span.segment{
+        border-bottom:3px solid #cb2655;
+        width:50%;
+        margin:0px auto;
+        display: block;
+    }
+}
+.luckiest{
+    font-family: 'Luckiest Guy',cursive;
+}
+.exclaim{
+    font-size:3em;
+    color:#fff;
+
+}
+.win{
+    width:50%;
+    margin:0px auto;
+}
+.subhead{
+    text-align:center;
+}
+.size-main{
+    font-size:2em;
+    color:#fff;
+    margin:25px;
+}
+#about, #details {
+    height:100vh;
+
+}
+#home-overlay{
+    background-image:url(images/fortnitegame-photo.jpg);
+    background-size: cover;
+        background-position: bottom;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    opacity:0.4;
+}
+.angled{
+    transform:rotate(5deg) scale(1.5);
+    height:50px;
+}
+#about{
+        background-size: contain;
+        
+}
+#about-overlay {
+        background-color: #1e1f3b;
+   transform:rotate(2deg);
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        overflow: auto;
+        top: 0px;
+        left: 0px;
+        opacity:0.9;
+}
+#date-time{
+    font-family: 'Luckiest Guy',cursive;
+    position: absolute;
+    z-index: 100;
+    bottom:0;
+    height:0;
+    width:100%;
+    color:#fff;
+    padding-bottom:10%;
+    .time-shield {
+        width:20%;
+        position:absolute;
+        left:50%;
+        top:0;
+        margin-top:-5%;
+        margin-left:-10%;
+    }
+    .date{
+        width:auto;
+        font-size:3em;
+        color:#fff;
+        position:absolute;
+        top:50%;
+        margin-top:-.75em;
+        @media(max-width:900px){
+            font-size:3vw;
+            width:50%;
+            text-align: center;
+            
+        }
+        
+    }
+    .day {
+        left:60%;
+        @media(max-width:900px) {
+            left:0;
+        }
+    }
+    .doors{
+        right:60%;
+        text-align:right;
+        @media(max-width:900px) {
+        text-align: center;
+        right:0;
+        }
+    }
+}
+.ribbon{
+    background-color:#cb2655;
+    
+}
+.blue{
+    background-color: #486db1;
+    color:#fff;
+}
+
+.sponsor{
+    width: 60%;margin:0px auto;
+    height:0px;
+    padding-bottom:50%;
+    img{
+        vertical-align: middle;
+    }
+}
+.shy h2{
+    font-size: 150%;
+}
+.footer-social-links{
+    color:#fff;
+    
+    a{
+        width:50px;
+        height:50px;
+        
+        border:2px solid #fff;
+        display: inline-block;
+        text-align: center;
+        border-radius:50%;
+        line-height:100%;
+        i{
+            font-size: 30px;
+            line-height: 50px;
+        }
+    }
+}
+
+ul#event-details{
+    padding-left: 0px;
+    li{
+         background-color: #cb2655;
+         color:#fff;
+         font-weight: 400;
+             margin-bottom: 2em;
+             height: 70px;
+             list-style: none;
+             padding:10px;
+             img{
+                 height:100%;
+                 width:auto;
+                
+             }
+             span{
+                 font-size: 18px;
+                 margin-left:20px;
+                 font-weight: bold;
+             }
+    }
+}
+
+.slide-bg{
+    background-color: #000;
+    background-size:cover;
+    background-position: center center;
+}
+#slide-track{
+    background-image: url(images/gallery/arena-track.jpg);
+}
+#slide-event {
+    background-image: url(images/gallery/arena-event.jpg);
+}
+#slide-concert {
+    background-image: url(images/gallery/arena-concert.jpg);
+}
