@@ -7,34 +7,135 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color:#fff;
+    background-color: #1e1f47;
     h2{
         font-family: 'Luckiest Guy',  cursive;
         font-size:3em;
         text-align:center;
+        margin-bottom:2em;
+         @media(min-width:481px) and (max-width:767px) {
+             font-size: 5vw !important;
+         }
+
+         @media(max-width:480px) {
+             font-size: 6vw !important;
+         }
     }
     p{
         font-size:20px;
         line-height: 200%;
         text-align:center;
+        @media(min-width:481px) and (max-width:767px) {
+            font-size: 3vw !important;
+        }
+         @media(max-width:480px) {
+             font-size: 4vw !important;
+         }
+       
     }
 }
 #logo{
     width:150px;
     margin-top:-30px;
+     @media(max-width:640px) {
+        width:100px;
+     }
 }
 .navbar-fixed-top {
-    background-color: #1e1f3b;
+    background-color: #1e1f47;
 }
 .navbar-transparent {
     background: transparent;
 }
+.navbar-collapse{
+    box-shadow:inset 0 0px;
+}
+.in ul.nav li{
+    text-align:center;
+}
+.in ul.nav li a span {
+    @media(max-width:767px) {
+        background-color: rgba(30, 31, 59, .5);
+        padding: .5em;
+        border-radius: .5em;
+    }
+}
 
-.home-section{
-    
-    
+
+.win {
+    width: 50%;
+    margin: 0px auto;
+    @media(max-width:640px) {
+        width:75%;
+    }
+}
+
+
+.subhead {
+    text-align: center;
+}
+.size-main {
+    font-size: 2em;
+    color: #fff;
+    margin: 25px;
+     @media(max-width:640px) {
+        font-size:1.5em;
+     }
+}
+.caption-content  {
+    @media(max-width:640px) {
+        padding-top:30%;
+    }
+}
+.caption-content .btn-l {
+    margin-right: 25px;
+}
+
+.caption-content .btn-r {
+    margin-left: 25px;
+}
+.caption-content .btn {
+    width: 250px;
+    padding:8px 0px;
+    text-align: center;
+    @media(max-width:640px){
+        display: block;
+        margin: 0px auto 1em;
+    }
+}
+
+span.segment {
+    width:100px;
+    margin:0px auto;
+    display: block;
+}
+
+.btn.btn-border-w{
+   
+    font-size:1.5em;
+
+}
+
+
+.btn.btn-border-r:hover,
+.btn.btn-border-r:focus {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn.btn-border-r, .btn.btn-border-w:hover,
+.btn.btn-border-w:focus {
+    background: #cb2655;
+    border-color: transparent;
+    color: #fff;
 }
 .dark-blue{
-    background-color: #1e1f3b;
+    background-color: #1e1f47;
+        span.segment {
+            border-bottom: 5px solid #cb2655;
+        }
+
     a{
         color:#fff;
     }
@@ -43,10 +144,7 @@ body {
     background-color:#b7d6f2;
     color:#19183c;
     span.segment{
-        border-bottom:3px solid #cb2655;
-        width:50%;
-        margin:0px auto;
-        display: block;
+        border-bottom:5px solid #cb2655;
     }
 }
 .luckiest{
@@ -57,24 +155,15 @@ body {
     color:#fff;
 
 }
-.win{
-    width:50%;
-    margin:0px auto;
-}
-.subhead{
-    text-align:center;
-}
-.size-main{
-    font-size:2em;
-    color:#fff;
-    margin:25px;
-}
+
+
 #about, #details {
-    height:100vh;
+    
 
 }
 #home-overlay{
     background-image:url(images/fortnitegame-photo.jpg);
+    
     background-size: cover;
         background-position: bottom;
     z-index: 0;
@@ -86,17 +175,37 @@ body {
     left: 0px;
     opacity:0.4;
 }
-.angled{
-    transform:rotate(5deg) scale(1.5);
-    height:50px;
-}
+
 #about{
-        background-size: contain;
-        
+    .blurb{
+        width:61%;
+        margin:0px auto;
+         @media(max-width:767px) {
+             
+             width:72%;
+         }
+    }
+           
+         
+}
+#about-top{clip-path:polygon(0 0, 0 10%, 120% 10%);
+    position: relative;
+    padding-bottom:100%;
+    width: 100%;
+    position: absolute;
+    margin-top:-10%;
+     overflow: auto;
+     top: 0px;
+     left: 0px;
+     background-color: #1e1f47;
+     
 }
 #about-overlay {
-        background-color: #1e1f3b;
-   transform:rotate(2deg);
+        background-color: #1e1f47;
+        background-image:url(images/raven.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center center;
         z-index: 0;
         height: 100%;
         width: 100%;
@@ -104,7 +213,8 @@ body {
         overflow: auto;
         top: 0px;
         left: 0px;
-        opacity:0.9;
+        opacity:0.2;
+        
 }
 #date-time{
     font-family: 'Luckiest Guy',cursive;
@@ -115,6 +225,9 @@ body {
     width:100%;
     color:#fff;
     padding-bottom:10%;
+    @media(min-width:1281px){
+        padding-bottom:100px;
+    }
     .time-shield {
         width:20%;
         position:absolute;
@@ -131,8 +244,8 @@ body {
         top:50%;
         margin-top:-.75em;
         @media(max-width:900px){
-            font-size:3vw;
-            width:50%;
+            font-size:4vw;
+            width:45%;
             text-align: center;
             
         }
@@ -160,6 +273,9 @@ body {
 .blue{
     background-color: #486db1;
     color:#fff;
+    h2{
+        color:#fff;
+    }
 }
 
 .sponsor{
@@ -168,10 +284,140 @@ body {
     padding-bottom:50%;
     img{
         vertical-align: middle;
+        
     }
 }
+
+
+
+
+#gallery{
+    padding:75px 0px;
+    position: relative;
+    .skyline{
+        position: absolute;
+        right:10%;
+        bottom: -20px;
+        width:20%;
+        max-width:250px;
+
+        img{
+           
+        }
+    }
+    z-index: 100;
+    position: relative;
+
+}
+.gallery-wrap{
+    width:80%;
+    margin: 0px auto;
+    @media(max-width:767px) {
+        width:auto;
+    }
+}
+@import "slick";
+.slick-prev,
+.slick-next {
+    font-size: 1em;
+    line-height: 0;
+    position: absolute;
+    top: 32%;
+    display: block;
+    width: 30px;
+    max-width: 8%;
+    height: 30px;
+    margin-top: -10px;
+    padding: 0;
+    cursor: pointer;
+    
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.slick-prev {
+    left: 1%;
+    content: ">";
+}
+
+.slick-next {
+    right: 0;
+    content: ">";
+}
+.slick-dots {
+    position: relative;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    padding-left: 0px !important;
+    li {
+        display: inline-block;
+        margin: 0px .5em;
+        button {
+            font-size: 0;
+            line-height: 0;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            cursor: pointer;
+            color: #486db1;
+            border: 0;
+            outline: none;
+            background: #486db1;
+            border-radius: 50%;
+        }
+    }
+    li.active {
+        background: #522b1c;
+    }
+}
+#home-slideshow {
+    .slick-prev,
+    .slick-next {
+        top: 45%;
+    }
+}
+
+
+#contact{
+    z-index: 100;
+    position: relative;
+}
+
+
+
+
+
+
+
+
 .shy h2{
-    font-size: 150%;
+    font-size: 4em;
+}
+#address .segment{
+    padding-bottom: 1em;
+    border-bottom: 2px solid #fff;
+    margin: 0px 0px 2em;
+    padding-bottom:1em;
+    height:1em;
+    
+}
+footer{
+    z-index: 1000;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    a{
+          color:#fff;
+    }
+    .copyright{
+        font-size:1em;
+    }
 }
 .footer-social-links{
     color:#fff;
@@ -179,7 +425,7 @@ body {
     a{
         width:50px;
         height:50px;
-        
+        margin-right: 1em;
         border:2px solid #fff;
         display: inline-block;
         text-align: center;
@@ -191,9 +437,14 @@ body {
         }
     }
 }
-
+#details{
+    h2{
+        color:#19183c;
+    }
+}
 ul#event-details{
     padding-left: 0px;
+   
     li{
          background-color: #cb2655;
          color:#fff;
@@ -201,16 +452,22 @@ ul#event-details{
              margin-bottom: 2em;
              height: 70px;
              list-style: none;
-             padding:10px;
+             @media(min-width: 640px){
+                padding:10px;
+             }
              img{
                  height:100%;
                  width:auto;
                 
              }
              span{
-                 font-size: 18px;
-                 margin-left:20px;
+                 font-size: 3vw;
+                 
                  font-weight: bold;
+                  @media(min-width: 640px) {
+                      font-size: 18px;
+                    margin-left:20px;
+                  }
              }
     }
 }
