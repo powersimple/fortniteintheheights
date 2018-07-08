@@ -50,6 +50,9 @@ body {
 .navbar-collapse{
     box-shadow:inset 0 0px;
 }
+.collapsing {
+    opacity:0;
+}
 .in ul.nav li{
     text-align:center;
 }
@@ -63,10 +66,13 @@ body {
 
 
 .win {
-    width: 50%;
-    margin: 0px auto;
+    text-align: center;
+    font-size:6vw;
+    line-height:100%;
+    letter-spacing: 2px;
+    margin-top:90px;
     @media(max-width:640px) {
-        width:75%;
+     
     }
 }
 
@@ -77,7 +83,7 @@ body {
 .size-main {
     font-size: 2em;
     color: #fff;
-    margin: 25px;
+    margin: 0px 0px 25px;
      @media(max-width:640px) {
         font-size:1.5em;
      }
@@ -85,16 +91,21 @@ body {
 .caption-content  {
     @media(max-width:640px) {
         padding-top:30%;
+        .btn{
+            margin:0px 0px 1em;
+        }
+    }
+     @media(min-width:641px) {
+        .btn-l {
+            margin-right: 25px;
+        }
+        .btn-r {
+            margin-left: 25px;
+        }
     }
 }
-.caption-content .btn-l {
-    margin-right: 25px;
-}
 
-.caption-content .btn-r {
-    margin-left: 25px;
-}
-.caption-content .btn {
+.caption-content {
     width: 250px;
     padding:8px 0px;
     text-align: center;
@@ -102,6 +113,38 @@ body {
         display: block;
         margin: 0px auto 1em;
     }
+    .btn{
+        font-size:1.5em;
+        width:250px;
+         transition: all 0.5s ease-in-out;
+         
+    }
+
+
+    .btn-l {
+        background: #cb2655 !important;
+        border-color: transparent !important;
+        color: #fff;
+    }
+        .btn-l:hover,
+        .btn-l:focus {
+            background: transparent !important;
+            border-color: #fff !important;
+            color: #fff !important;
+        }
+        .btn-r:hover,
+        .btn-l:focus {
+         background: #cb2655 !important;
+         border-color: transparent !important;
+         color: #fff;
+         }
+        }
+
+        .btn-r{
+            background: transparent;
+            border-color: #fff;
+            color: #fff;
+            
 }
 
 span.segment {
@@ -117,20 +160,10 @@ span.segment {
 }
 
 
-.btn.btn-border-r:hover,
-.btn.btn-border-r:focus {
-    background: transparent;
-    border-color: #fff;
-    color: #fff;
-}
 
-.btn.btn-border-r, .btn.btn-border-w:hover,
-.btn.btn-border-w:focus {
-    background: #cb2655;
-    border-color: transparent;
-    color: #fff;
-}
+
 .dark-blue{
+    
     background-color: #1e1f47;
         span.segment {
             border-bottom: 5px solid #cb2655;
@@ -161,6 +194,25 @@ span.segment {
     
 
 }
+svg.semi{
+    opacity: 0.2;    
+}
+.page-loader {
+    background-color: #1e1f47;
+    .loader-image{
+        background:url(images/logos/fortniteintheheights-semi.svg) center center no-repeat;
+        background-size:cover;
+        opacity:0.4;
+        width:61.8%;
+        padding-bottom:72%;
+        top:10%;        
+        left:50%;
+        margin-left:-30.9%;
+        position: absolute;
+
+    }
+}
+
 #home-overlay{
     background-image:url(images/fortnitegame-photo.jpg);
     
@@ -235,6 +287,10 @@ span.segment {
         top:0;
         margin-top:-5%;
         margin-left:-10%;
+        @media(min-width:1281px) {
+            width:250px;
+            margin-left:-125px;
+        }
     }
     .date{
         width:auto;
@@ -276,15 +332,33 @@ span.segment {
     h2{
         color:#fff;
     }
+    h3 {
+        color: #fff;
+         @media(max-width:640px) {
+             font-size: 4vw;
+          
+             text-align: center;
+         }
+    }
 }
-
+#sponsor-board{
+    padding:100px 0px;
+}
 .sponsor{
-    width: 60%;margin:0px auto;
-    height:0px;
-    padding-bottom:50%;
-    img{
-        vertical-align: middle;
-        
+    width: 20%;
+
+    margin: 0px 6%;
+    height: 0px;
+    padding-bottom:20%;
+    display: inline-block;
+    a {
+        display: block;
+        img{
+            width:100%;
+            
+            vertical-align: middle;
+            
+        }
     }
 }
 
@@ -314,6 +388,10 @@ span.segment {
     margin: 0px auto;
     @media(max-width:767px) {
         width:auto;
+    }
+    .slider{
+            max-width: 1240px;
+            margin: 0px auto;
     }
 }
 @import "slick";
@@ -387,57 +465,73 @@ span.segment {
 #contact{
     z-index: 100;
     position: relative;
+    
+    .btn-r{
+       
+        transform: scale(1.1, 1.1);
+        border:3px solid #fff;
+        background: #cb2655;
+        border-color: transparent;
+        color: #fff;
+        border-radius:5px;
+        padding:1%;
+        width: 10em;
+        margin: 0px auto;
+        display: block;
+        font-size: 2em;
+        text-align: center;
+        transition: all 1s ease-in-out;
+    }
+    .btn-r:hover,
+    .btn-r:focus {
+        
+         background: transparent;
+         border-color: #fff;
+         color: #fff;
+    }
 }
 
 
 
 
 
-
+.presents{
+    font-style: italic;
+    
+}
 
 
 .shy h2{
     font-size: 4em;
+    margin-bottom:1em;
 }
-#address .segment{
-    padding-bottom: 1em;
-    border-bottom: 2px solid #fff;
-    margin: 0px 0px 2em;
-    padding-bottom:1em;
-    height:1em;
-    
-}
-footer{
-    z-index: 1000;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    a{
-          color:#fff;
+
+#address{
+    h4{ margin: 0px 0px 0px;}
+    h5{
+        margin:0px 0px 5px;;
+      display: inline-block;  
+        border-bottom:1px solid #fff;
+        padding-bottom:5px;
     }
-    .copyright{
-        font-size:1em;
+    .segment {
+        padding-bottom: 1em;
+        border-bottom: 2px solid #fff;
+        margin: 0px 0px 2em;
+        padding-bottom: 1em;
+        height: 1em;
     }
-}
-.footer-social-links{
-    color:#fff;
-    
-    a{
-        width:50px;
-        height:50px;
-        margin-right: 1em;
-        border:2px solid #fff;
-        display: inline-block;
-        text-align: center;
-        border-radius:50%;
-        line-height:100%;
-        i{
-            font-size: 30px;
-            line-height: 50px;
-        }
-    }
+    line-height: 120%;
+     @media(max-width: 767px) {
+     text-align: center;
+      .segment {
+        margin:0px auto 2em;
+      }
+ }
+ 
 }
 #details{
+    padding-bottom:15%;
     h2{
         color:#19183c;
     }
@@ -485,4 +579,88 @@ ul#event-details{
 }
 #slide-concert {
     background-image: url(images/gallery/arena-concert.jpg);
+}
+footer {
+    z-index: 1000;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    a {
+        color: #fff;
+    }
+    .copyright {
+        font-size: 1em;
+    }
+    .nav>li>a:focus,
+    .nav>li>a:hover {
+        color: #486db1;
+        font-weight:400;
+    }
+}
+
+.footer-social-links {
+    color: #fff;
+    margin-top: 2em;
+    a {
+        width: 40px;
+        height: 40px;
+        margin-right: 1em;
+        border: 2px solid #fff;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 100%;
+        transition: all 1s ease-in-out;
+        i {
+            font-size: 25px;
+            line-height: 37px;
+        }
+    }
+    a:hover {
+        color: #b7d6f2;
+        border: 3px solid #b7d6f2;
+        transform: scale(1.2, 1.2);
+    }
+
+
+
+    footer {
+        z-index: 1000;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        a {
+            color: #fff;
+        }
+        .copyright {
+            font-size: 1em;
+        }
+    }
+
+    .footer-social-links {
+        color: #fff;
+        margin-top: 2em;
+        a {
+            width: 50px;
+            height: 50px;
+            margin-right: 1em;
+            border: 2px solid #fff;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 100%;
+            transition: all 1s ease-in-out;
+            i {
+                font-size: 30px;
+                line-height: 50px;
+            }
+        }
+        a:hover {
+            color: #b7d6f2;
+            border: 3px solid #b7d6f2;
+            transform: scale(1.2, 1.2);
+        }
+    }
+    
+    
 }

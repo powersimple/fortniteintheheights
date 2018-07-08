@@ -7,7 +7,7 @@
   arrows: true,
   infinite: true,
   speed: 1500,
-
+  fade: true,
   cssEase: 'linear',
   focusoOnSelect: true,
   nextArrow: '<i class="slick-arrow slick-next"></i>',
