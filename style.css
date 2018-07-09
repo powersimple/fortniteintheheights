@@ -26,6 +26,7 @@ body p { font-size: 20px; line-height: 200%; text-align: center; }
 @media (max-width: 767px) { .in ul.nav li a span { background-color: rgba(30, 31, 59, 0.5); padding: .5em; border-radius: .5em; } }
 
 .win { text-align: center; font-size: 6vw; line-height: 100%; letter-spacing: 2px; margin-top: 90px; }
+@media (max-width: 640px) { .win { margin-top: 190px; } }
 
 .subhead { text-align: center; }
 
@@ -38,7 +39,7 @@ body p { font-size: 20px; line-height: 200%; text-align: center; }
   .caption-content .btn-r { margin-left: 25px; } }
 
 .caption-content { width: 250px; padding: 8px 0px; text-align: center; }
-@media (max-width: 640px) { .caption-content { display: block; margin: 0px auto 1em; } }
+@media (max-width: 640px) { .caption-content { display: table-cell; margin: 0px auto 1em; } }
 .caption-content .btn { font-size: 1.5em; width: 250px; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
 .caption-content .btn-l { background: #cb2655 !important; border-color: transparent !important; color: #fff; }
 .caption-content .btn-l:hover, .caption-content .btn-l:focus { background: transparent !important; border-color: #fff !important; color: #fff !important; }
@@ -71,7 +72,7 @@ svg.semi { opacity: 0.2; }
 #about .blurb { width: 61%; margin: 0px auto; }
 @media (max-width: 767px) { #about .blurb { width: 72%; } }
 
-#about-top { -webkit-clip-path: polygon(0 0, 0 10%, 120% 10%); clip-path: polygon(0 0, 0 10%, 120% 10%); position: relative; padding-bottom: 100%; width: 100%; position: absolute; margin-top: -10%; overflow: auto; top: 0px; left: 0px; background-color: #1e1f47; }
+#about-top { -webkit-clip-path: polygon(0 0, 0 10%, 120% 10%); clip-path: polygon(0 0, 0 10%, 120% 10%); position: relative; padding-bottom: 100%; width: 100%; position: absolute; margin-top: -9%; overflow: auto; top: 0px; left: 0px; background-color: #1e1f47; }
 
 #about-overlay { background-color: #1e1f47; background-image: url(images/raven.png); background-size: contain; background-repeat: no-repeat; background-position: center center; z-index: 0; height: 100%; width: 100%; position: absolute; overflow: auto; top: 0px; left: 0px; opacity: 0.2; }
 
@@ -150,7 +151,9 @@ svg.semi { opacity: 0.2; }
 
 .presents { font-style: italic; }
 
-.shy h2 { font-size: 4em; margin-bottom: 1em; }
+.shy h2 { font-size: 4em !important; margin-bottom: 1em; }
+@media (min-width: 768px) and (max-width: 1281px) { .shy h2 { font-size: 3.5vw !important; } }
+@media (max-width: 767px) { .shy h2 { font-size: 3.5vw !important; } }
 
 #address { line-height: 120%; }
 #address h4 { margin: 0px 0px 0px; }
