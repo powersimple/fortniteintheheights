@@ -42,7 +42,7 @@ gulp.task('styles', function () {
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
     .pipe(gulp.dest('./'))
-    .pipe(notify({ message: 'SCSS converted to SCSS ' }))
+    .pipe(notify({ message: 'SCSS compiled to CSS ' }))
     .pipe(browserSync.stream())
 })
 // Scripts

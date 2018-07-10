@@ -69,6 +69,7 @@ svg.semi { opacity: 0.2; }
 
 #home-overlay { background-image: url(images/fortnitegame-photo.jpg); background-size: cover; background-position: bottom; z-index: 0; height: 100%; width: 100%; position: fixed; overflow: auto; top: 0px; left: 0px; opacity: 0.4; }
 
+#about h2 { margin-bottom: 1em; }
 #about .blurb { width: 61%; margin: 0px auto; }
 @media (max-width: 767px) { #about .blurb { width: 72%; } }
 
